@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cr.ac.una.tarea.Controller.RegistroController">
+    <stylesheets>
+        <URL value="@/cr/ac/una/tarea/view/css/style.css" />
+    </stylesheets>
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Registro Deportes con balon">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="imgRegistro" fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="14.0" onMouseClicked="#OnMouseClickedimgRegistro" pickOnBounds="true" preserveRatio="true" />
+                        <HBox alignment="CENTER" layoutY="209.0" prefHeight="111.0" prefWidth="600.0">
+                           <children>
+                              <JFXButton fx:id="btncancelar" onAction="#OnActionBtnCancelar" text="Cancelar" />
+                              <JFXButton fx:id="btneditar" onAction="#OnActionBtnEditar" text="Editar" />
+                              <JFXButton fx:id="btnguardar" onAction="#OnActionBtnGuardar" text="Guardar" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+          <Tab text="Registro de equipos">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="imgRegistroequipos" fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="14.0" onMouseClicked="#OnMouseClickedimgRegistroequpos" pickOnBounds="true" preserveRatio="true" />
+                        <HBox alignment="CENTER" layoutY="209.0" prefHeight="111.0" prefWidth="600.0">
+                           <children>
+                              <JFXButton fx:id="btncancelar2" onAction="#OnActionBtnCancelar2" text="Cancelar" />
+                              <JFXButton fx:id="btneditar2" onAction="#OnActionBtnEditar2" text="Editar" />
+                              <JFXButton fx:id="btnguardar2" onAction="#OnActionBtnGuardar2" text="Guardar" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
