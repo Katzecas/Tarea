@@ -6,6 +6,7 @@
 package cr.ac.una.tarea.Controller;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTextField;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -37,13 +38,21 @@ public class RegistroController extends Controller implements Initializable {
     private JFXButton btneditar2;
     @FXML
     private JFXButton btnguardar2;
+    @FXML
+    private JFXTextField txtidDeporte;
+    @FXML
+    private JFXTextField txtDeporte;
+    @FXML
+    private JFXTextField txtidequipo;
+    @FXML
+    private JFXTextField txtEquipo;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+      
     }    
 
     @Override
